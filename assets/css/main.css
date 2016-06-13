@@ -7,9 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-#smallimg {
-	display: none;
-}
 
 .glyphicon {
     font-size: 70px;
@@ -3493,6 +3490,15 @@
 					color: inherit;
 				}
 
+#bigimg {
+	display: inline-block;
+}
+
+#smallimg {
+	display: none;
+}
+
+
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
@@ -3502,6 +3508,15 @@
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+
+		#bigimg {
+			display: inline-block;
+		}
+
+		#smallimg {
+			display: none;
+		}
+
 
 	}
 
@@ -3553,6 +3568,15 @@
 			#footer {
 				padding: 4.5em 0;
 			}
+
+			#bigimg {
+				display: inline-block;
+			}
+
+			#smallimg {
+				display: none;
+			}
+
 
 	}
 
@@ -3635,6 +3659,16 @@
 			#footer {
 				padding: 4.5em 0;
 			}
+
+
+			#bigimg {
+				display: inline-block;
+			}
+
+			#smallimg {
+				display: none;
+			}
+
 
 	}
 
@@ -3935,6 +3969,16 @@
 				padding: 3.25em 1.5em;
 			}
 
+
+			#bigimg {
+				display: inline-block;
+			}
+
+			#smallimg {
+				display: none;
+			}
+
+
 	}
 
 /* XSmall */
@@ -4028,6 +4072,16 @@
 						margin: 0;
 						padding: 0;
 					}
+
+
+		#bigimg {
+			display: inline-block;
+		}
+
+		#smallimg {
+			display: none;
+		}
+
 
 	}
 	
