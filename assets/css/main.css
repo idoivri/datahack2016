@@ -6,6 +6,11 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+#smallimg {
+	display: none;
+}
+
 .glyphicon {
     font-size: 70px;
     color: #ff3c62;
@@ -4026,6 +4031,112 @@
 
 	}
 	
+
+/* XXSmall */
+
+	@media screen and (max-width: 420px) {
+
+		/* Basic */
+
+			html, body {
+				min-width: 320px;
+			}
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+			#smallimg {
+				display: inline-block;
+			}
+
+			#bigimg {
+				display: none;
+			}
+
+
+		/* List */
+
+			ul.actions {
+				margin: 0 0 2em 0;
+			}
+
+				ul.actions li {
+					display: block;
+					padding: 1em 0 0 0;
+					text-align: center;
+					width: 100%;
+				}
+
+					ul.actions li:first-child {
+						padding-top: 0;
+					}
+
+					ul.actions li > * {
+						margin: 0 !important;
+						width: 100%;
+					}
+
+				ul.actions.small li {
+					padding: 0.5em 0 0 0;
+				}
+
+					ul.actions.small li:first-child {
+						padding-top: 0;
+					}
+
+		/* Button */
+
+			input[type="submit"],
+			input[type="reset"],
+			input[type="button"],
+			.button {
+				padding: 0;
+			}
+
+		/* Spotlight */
+
+			.spotlight .image.main {
+				max-height: 50vh;
+			}
+
+			.spotlight .content {
+				padding: 3em 1.25em 1em 1.25em !important;
+			}
+
+		/* Wrapper */
+
+			.wrapper {
+				padding: 3em 1.25em 1em 1.25em;
+			}
+
+		/* Banner */
+
+			#banner .content {
+				padding: 3em 1.5625em 5.25em 1.5625em;
+			}
+
+		/* Footer */
+
+			#footer {
+				padding: 3em 1.25em;
+			}
+
+				#footer .copyright {
+					line-height: inherit;
+				}
+
+					#footer .copyright li {
+						border-left: 0;
+						display: block;
+						margin: 0;
+						padding: 0;
+					}
+
+	}
+
+
+
 .slidingDiv {
 
 }
