@@ -4239,3 +4239,18 @@ display:none;
 p.align {
 	text-align: left;
 }
+
+#timer {
+margin-top: 50px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+#timer span {
+  font-size: 60px;
+  color: #fff;
+  margin: 0 3px 0 15px;
+}
+#timer span:first-child {
+  margin-left: 0;
+}
