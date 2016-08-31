@@ -70,9 +70,9 @@
 						  <span id="minutes"></span>minutes
 						  <span id="seconds"></span>seconds
 						</div>
-						<h3> Registration closes on September 8th<h3>						
+						<h3> Registration closes on September 8th<h3>
 						</div>
-	
+
 					</div>
 				</section>
 
@@ -246,10 +246,10 @@
 
 										<div class="4u  12u$(xsmall)"><span class=""><img src="images/logos/logo_wix_b.png" onmouseover="this.src='images/logos/logo_wix.png'" onmouseout="this.src='images/logos/logo_wix_b.png'"/></span></div>
 
-										<div class="4u 12u$(medium) 12u$(xsmall)"><span class=""><img src="images/logos/logo_windward_b.png" onmouseover="this.src='images/logos/logo_windward.png'" onmouseout="this.src='images/logos/logo_windward_b.png'"/></span></div> 
+										<div class="4u 12u$(medium) 12u$(xsmall)"><span class=""><img src="images/logos/logo_windward_b.png" onmouseover="this.src='images/logos/logo_windward.png'" onmouseout="this.src='images/logos/logo_windward_b.png'"/></span></div>
 										<div class="4u$ 12u$(medium) 12u$(xsmall)"><span class=""><img src="images/logos/logo_final_b.png" onmouseover="this.src='images/logos/logo_final.png'" onmouseout="this.src='images/logos/logo_final_b.png'"/></span></div>
 
-										<br><br>	
+										<br><br>
 										<div class="12u$ 12u$(xsmall)"><span class=""><img src="images/logos/logo_paypal_b.png" onmouseover="this.src='images/logos/logo_paypal.png'" onmouseout="this.src='images/logos/logo_paypal_b.png'"/></span></div>
 										<br> <br>
 
@@ -324,7 +324,7 @@
 					<div class="container">
 						<header>
 							<h2>Data Challenges</h2>
-							<p>Some of our sponsors will provide you with specific prize challenges.<br> 
+							<p>Some of our sponsors will provide you with specific prize challenges.<br>
 						</header>
 					<div class="container">
 							<div class="row uniform">
@@ -341,11 +341,11 @@
 								<img src="images/logos/logo_windward_white.png">
 									<p>Love the oceans? Teams competing in the challenge will attempt to make sense of data on ships worldwide. The team with the best solution will win an awesome prize! More details coming soon...</p>
 								</section>
-							</div>	
+							</div>
 							<br>
 							<h3><u><a href="challenges.html"  onMouseOver="this.bgColor='white';color:white;background-color:white;">Check them out!</h3></a></u></p>
 
-					</div>			
+					</div>
 
 					</div>
 				</section>
@@ -475,8 +475,8 @@ $(".slidingDiv").slideToggle();
 <script type="text/javascript">
 var timer;
 
-var compareDate = new Date();
-compareDate.setDate(compareDate.getDate() + 7.5); //just for this demo today + 7 days
+var compareDate = new Date("September 8, 2016 23:59:00");
+// compareDate.setDate(compareDate.getDate() + 7.5); //just for this demo today + 7 days
 
 timer = setInterval(function() {
   timeBetweenDates(compareDate);
@@ -491,9 +491,9 @@ function timeBetweenDates(toDate) {
 
     // Timer done
     clearInterval(timer);
-  
+
   } else {
-    
+
     var seconds = Math.floor(difference / 1000);
     var minutes = Math.floor(seconds / 60);
     var hours = Math.floor(minutes / 60);
