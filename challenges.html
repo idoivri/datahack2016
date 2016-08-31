@@ -65,15 +65,12 @@
 										<br><b>Goal:</b><br>
 										Using historical user event data we want to predict if a user performs a specific action ("the target action") within 14 days from the last available activity data.<br>
 										<br><b>Data:</b><br>
+										We will provide 3 tables for training purposes:
 										<ul>
-										  <li>Coffee</li>
-										  <li>Tea</li>
-										  <li>Milk</li>
+										  <li>Daily aggregated user action counters (user_id, age**, action, counter).</li>
+										  <li>Demographic features (user_id, feature1, feature 2, etc…)</li>
+										  <li>Target table containing the age at which the user performed the "target action" (user_id, age). If the user did not perform the action - they will not appear in the table.</li>
 										</ul>
-										We will provide 3 tables for training purposes:<br>
-										* Daily aggregated user action counters (user_id, age**, action, counter).<br>
-										* Demographic features (user_id, feature1, feature 2, etc…)<br>
-										* Target table containing the age at which the user performed the "target action" (user_id, age). If the user did not perform the action - they will not appear in the table.<br>
 										<br><b>Assessment:</b><br>
 										Teams will also receive data in the same format as tables 1-2 described above, without the target action dataset.
 										For each user_id and the last age seen in the assessment dataset - teams will rank the users by their likelihood to perform the target action within the following 14 days.
