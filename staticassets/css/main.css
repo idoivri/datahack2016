@@ -4226,6 +4226,13 @@ display:none;
     box-shadow: 0px 0px 0px 1.5px #ff3c62;
 	border-radius: 50%;
 }
+      .judge {
+    width:180px;
+    height:180px;
+	border: 5px solid transparent ;
+    box-shadow: 0px 0px 0px 1.5px #ff3c62;
+	border-radius: 100%;
+}
       .circleprize {
     width:120px;
     height:120px;
