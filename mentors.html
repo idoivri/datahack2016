@@ -13,10 +13,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="staticassets/js/ie/html5shiv.js"></script><![endif]-->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="staticassets/css/main.css" />
-		<link rel="stylesheet" href="staticassets/css/mentros_style.css" />
-		<link rel="stylesheet" href="staticassets/css/materialize.css" />
 		<link href="https://file.myfontastic.com/oXBpAhW2PdxMqAShGGCV59/icons.css" rel="stylesheet">
+		<link rel="stylesheet" href="staticassets/css/materialize.css" />
+		<link rel="stylesheet" href="staticassets/css/mentros_style.css" />
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="staticassets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="staticassets/css/ie8.css" /><![endif]-->
 
@@ -99,7 +101,7 @@ var data = {
             "email" : "tapolcai@tmit.bme.hu",
             "pic" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAYLAAAAJGZiNzk5M2EyLWJmYjAtNGM1OC1iNTBkLThmNjNjMDRjOTc0Mw.jpg",
             "content" : "",
-            "website" : "aaa bbb sss fff asdkasd asd "},
+            "website" : "aaa bbb sss fff asdkasd asd"},
 		2 :  {  "name" : "Janos Tapolcai",
             "company" : "BME",
             "company_link" : "http://www.bme.hu/",
@@ -198,6 +200,7 @@ $(document).ready(function(){
 	  console.log('continue')
         continue;
       }
+			res = sorted_data[row*people_per_row + col].website.split(" ")
       row_html +=
         "<div class=\"col s3\">"+
         "<div class=\"card\">"+
@@ -208,8 +211,12 @@ $(document).ready(function(){
             "<div class=\"card-content\">"+
               "<p><a href=\""+ sorted_data[row*people_per_row + col].company_link +"\">" + sorted_data[row*people_per_row + col].company + "</a></p>"+
             "</div>"+
-            "<div class=\"center card-action\" >"+
-            sorted_data[row*people_per_row + col].website +
+            "<div class=\"center card-action\" >";
+
+			for(var tag in res){
+				row_html += "<kbd>"+res[tag]+"</kbd> ";
+			}
+			row_html +=
               // "<a href=\"mailto:" + data[row*people_per_row + col].email +  "\">Email</a>"+
             "</div>"+
           "</div>"+
