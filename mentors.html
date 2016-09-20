@@ -101,7 +101,7 @@ var data = {
             "email" : "tapolcai@tmit.bme.hu",
             "pic" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAYLAAAAJGZiNzk5M2EyLWJmYjAtNGM1OC1iNTBkLThmNjNjMDRjOTc0Mw.jpg",
             "content" : "",
-            "website" : "aaa bbb sss fff asdkasd asd"},
+            "website" : "aaa_fff ff_asdkasd_asd"},
 		2 :  {  "name" : "Janos Tapolcai",
             "company" : "BME",
             "company_link" : "http://www.bme.hu/",
@@ -200,7 +200,7 @@ $(document).ready(function(){
 	  console.log('continue')
         continue;
       }
-			res = sorted_data[row*people_per_row + col].website.split(" ")
+			res = sorted_data[row*people_per_row + col].website.split("_")
       row_html +=
         "<div class=\"col s3\">"+
         "<div class=\"card\">"+
