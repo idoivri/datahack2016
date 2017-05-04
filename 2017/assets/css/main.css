@@ -1623,11 +1623,11 @@
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: #16bead;
+		background-image: url("images/overlay.png"), /* -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
+		background-image: url("images/overlay.png"), /* -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
+		background-image: url("images/overlay.png"), /* -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
+		background-image: url("images/overlay.png"), /* linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1644,8 +1644,8 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		background-color: #16bead;
+
 	}
 
 	body, input, select, textarea {
@@ -3799,3 +3799,36 @@
 			}
 
 		}
+
+
+
+.videofull {		
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -3 ;
+  transform: translate(-50%, -50%);
+}
+.overlay {
+	position: fixed;
+	background: url(images/overlay.png), #16bead; /* For browsers that do not support gradients */
+    background: url(images/overlay.png), -webkit-linear-gradient(#16bead, #18b7a4); /* For Safari 5.1 to 6.0 */
+    background: url(images/overlay.png), -o-linear-gradient(#16bead, #18b7a4); /* For Opera 11.1 to 12.0 */
+    background: url(images/overlay.png), -moz-linear-gradient(#16bead, #18b7a4); /* For Firefox 3.6 to 15 */
+    background: url(images/overlay.png), linear-gradient(#16bead, #18b7a4); /* Standard syntax */
+	opacity: 0.7;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	padding: 10px 0;
+	z-index: -1;
+}
+
+.whitefont {
+	color: white !important;
+}
