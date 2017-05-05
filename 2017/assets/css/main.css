@@ -2028,7 +2028,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9acff2;
+				background-color: #25d3c2;
 			}
 
 			input[type="submit"].special:active,
@@ -2223,7 +2223,7 @@
 	input[type="email"],
 	select,
 	textarea {
-		background: rgba(255, 255, 255, 0.075);
+		background: rgba(255, 255, 255, 0.55);
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
@@ -2265,23 +2265,23 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(11, 85, 78, 0.95) !important;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(11, 85, 78, 0.95) !important;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(11, 85, 78, 0.95) !important;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(11, 85, 78, 0.95) !important;
 	}
 
 	.formerize-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(18, 127, 116, 0.9) !important;
 	}
 
 /* Icon */
@@ -3442,7 +3442,7 @@
 				#main input[type="button"].special:hover,
 				#main button.special:hover,
 				#main .button.special:hover {
-					background-color: #9acff2;
+					background-color: #25d3c2;
 				}
 
 				#main input[type="submit"].special:active,
@@ -3830,5 +3830,13 @@
 }
 
 .whitefont {
-	color:"white" !important;
+	color:#FFF !important;
+}
+
+
+
+
+.top {
+	padding-top: 7%;
+	padding-bottom: 7%;
 }
