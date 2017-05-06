@@ -2937,13 +2937,14 @@
 	}
 
 		.statistics li {
+			
 			-moz-flex: 1;
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
 			padding: 1.5em;
 			color: #636363;
-			text-align: center;
+			text-align: center; 
 		}
 
 			.statistics li.style1 {
