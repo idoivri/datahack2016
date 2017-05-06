@@ -3919,3 +3919,10 @@
 	background-color: #ff507a !important;
 	color: #fff !important;
 }
+
+@media screen and (min-width: 500px) {
+    .deskHide { display:none !important; }
+}
+@media all and (max-width: 959px) {
+    .mobileHide{display:none;}
+}
